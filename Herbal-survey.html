@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-widt initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form id="survey-field">
+    <h1 id="title">Herbal Tea Bleand Review</h1>
+    <p id="description">Thank you for taking the time to review our products</p>
+    <div class="input-element">
+      <label id="name-label">name</label>
+      <input required id="name" type="text" placeholder="Enter your name" />
+    </div>
+    <div class="input-element">
+      <label id="email-label">email</label>
+      <input type="email" id="email" type="email" placeholder="Enter your email" required />
+  
+    </div>
+    <div class="input-element">
+      <label id="number-label">age (optional)</label>
+      <input id="number" type="number" min="0" max="99" placeholder="age" />
+    </div>
+    <!--END OF NAME, EMAIL, AGE, TITLE-->
+    <!--START OF DROP DOWN-->
+    <div class="input-element">
+      <legend>Would you recommend this poduct to your peers?</legend>
+      <select id="dropdown">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+      </select>
+    </div>
+    <div class="input-element">
+      <legend>How would you rate this product?</legend>
+      <label><input type="radio" name="rating" value="above average">Above Average</label>
+    </div>
+    <div class="input-element">
+      <label><input type="radio" name="rating" value="Average">Average</label>
+    </div>
+    <div class="input-element">
+      <label><input type="radio" name="rating" value="Below Average">Below Average</label>
+    </div>
+    <div class="input-element">
+      <label><input type="radio" name="rating" value="Poor">Poor</label>
+    </div>
+    <div class="input-element">
+      <legend>What qualities did this product have the most? (check all that apply)</legend>
+    </div>
+    <div class="input-element">
+      <label><input type="checkbox" id="quality" name="quality1" value="Sweet">Sweet</label>
+    </div>
+    <div class="input-element">
+      <label><input type="checkbox" id="quality" name="quality2" value="aroma">Herbaceous</label>
+    </div>
+    <div class="input-element">
+      <label><input type="checkbox" id="quality" name="quality3" value="effect">Calming</label>
+    </div>
+    <div class="input-element">
+      <legend>Additional suggestions</legend>
+      <textarea id="comments" name="comments"></textarea>
+      <div class="input-element">
+        <button id="submit" type="submit">Submit</button>
+      </div>
+    </div>
+  </form>
+  
+  
+  
+  
+</body>
