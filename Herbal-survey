@@ -1,121 +1,70 @@
 <!DOCTYPE html>
-<form id="survey-field">
-  <h1 id="title">Herbal Tea Bleand Review</h1>
-  <p id="description">Thank you for taking the time to review our products</p>
-  <div class="input-element">
-    <label id="name-label">name</label>
-    <input required id="name" type="text" placeholder="Enter your name" />
-  </div>
-  <div class="input-element">
-    <label id="email-label">email</label>
-    <input required type="email" id="email" type="email" placeholder="Enter your email" />
-
-  </div>
-  <div class="input-element">
-    <label id="number-label">age (optional)</label>
-    <input id="number" type="number" min="0" max="99" placeholder="age" />
-  </div>
-  <!--END OF NAME, EMAIL, AGE, TITLE-->
-  <!--START OF DROP DOWN-->
-  <div class="input-element">
-    <legend>Would you recommend this poduct to your peers?</legend>
-    <select id="dropdown">
-      <option value="yes">yes</option>
-      <option value="no">no</option>
-    </select>
-  </div>
-  <div class="input-element">
-    <legend>How would you rate this product?</legend>
-    <label><input type="radio" name="rating" value="above average">Above Average</label>
-  </div>
-  <div class="input-element">
-    <label><input type="radio" name="rating" value="Average">Average</label>
-  </div>
-  <div class="input-element">
-    <label><input type="radio" name="rating" value="Below Average">Below Average</label>
-  </div>
-  <div class="input-element">
-    <label><input type="radio" name="rating" value="Poor">Poor</label>
-  </div>
-  <div class="input-element">
-    <legend>What qualities did this product have the most? (check all that apply)</legend>
-  </div>
-  <div class="input-element">
-    <label><input type="checkbox" id="quality" name="quality1" value="Sweet">Sweet</label>
-  </div>
-  <div class="input-element">
-    <label><input type="checkbox" id="quality" name="quality2" value="aroma">Herbaceous</label>
-  </div>
-  <div class="input-element">
-    <label><input type="checkbox" id="quality" name="quality3" value="effect">Calming</label>
-  </div>
-  <div class="input-element">
-    <legend>Additional suggestions</legend>
-    <textarea id="comments" name="comments"></textarea>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-widt initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form id="survey-field">
+    <h1 id="title">Herbal Tea Bleand Review</h1>
+    <p id="description">Thank you for taking the time to review our products</p>
     <div class="input-element">
-      <button id="submit" type="submit">Submit</button>
+      <label id="name-label">name</label>
+      <input required id="name" type="text" placeholder="Enter your name" />
     </div>
-  </div>
-</form>
-
-
-
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  background-image: url("https://images.unsplash.com/photo-1694035449560-bbcfc84baef2?q=80&w=2578&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: left;
-  font-family: Raleway, sans-serif;
-  opacity: 94%;
-}
-form {
-  max-width: 500px;
-  height: auto;
-  margin: auto;
-  padding: 20px 20px;
-  background-color: #8cba93;
-  border-radius: 15px;
-  border: 2px solid #042e14;
-}
-input {
-  padding: 4px;
-}
-.input-element {
-  margin: 5px;
+    <div class="input-element">
+      <label id="email-label">email</label>
+      <input type="email" id="email" type="email" placeholder="Enter your email" required />
   
-}
-h1 {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  color: #042e14;
+    </div>
+    <div class="input-element">
+      <label id="number-label">age (optional)</label>
+      <input id="number" type="number" min="0" max="99" placeholder="age" />
+    </div>
+    <!--END OF NAME, EMAIL, AGE, TITLE-->
+    <!--START OF DROP DOWN-->
+    <div class="input-element">
+      <legend>Would you recommend this poduct to your peers?</legend>
+      <select id="dropdown">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+      </select>
+    </div>
+    <div class="input-element">
+      <legend>How would you rate this product?</legend>
+      <label><input type="radio" name="rating" value="above average">Above Average</label>
+    </div>
+    <div class="input-element">
+      <label><input type="radio" name="rating" value="Average">Average</label>
+    </div>
+    <div class="input-element">
+      <label><input type="radio" name="rating" value="Below Average">Below Average</label>
+    </div>
+    <div class="input-element">
+      <label><input type="radio" name="rating" value="Poor">Poor</label>
+    </div>
+    <div class="input-element">
+      <legend>What qualities did this product have the most? (check all that apply)</legend>
+    </div>
+    <div class="input-element">
+      <label><input type="checkbox" id="quality" name="quality1" value="Sweet">Sweet</label>
+    </div>
+    <div class="input-element">
+      <label><input type="checkbox" id="quality" name="quality2" value="aroma">Herbaceous</label>
+    </div>
+    <div class="input-element">
+      <label><input type="checkbox" id="quality" name="quality3" value="effect">Calming</label>
+    </div>
+    <div class="input-element">
+      <legend>Additional suggestions</legend>
+      <textarea id="comments" name="comments"></textarea>
+      <div class="input-element">
+        <button id="submit" type="submit">Submit</button>
+      </div>
+    </div>
+  </form>
   
-}
-p {
-  font-size: 11px;
-  font-style: italic;
-  font-family: serif;
-  text-align: center;
-  padding: 5px;
-}
-textarea {
-  width: 65%;
-  height: 12em;
-  padding: 5px;
-}
-button {
-  width: 15%;
-  height: 22px;
-  border-radius: 8px;
-  background-color: #042e14;
-}
-
+  
+  
+  
+</body>
